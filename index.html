@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Plus - Healthcare Support</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+ 
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>MediCare Plus <span style="color: #26acc7;">(Jarurat Care)</span></h1>
+            <p>Comprehensive Healthcare Support & Patient Services</p>
+        </header>
+
+        <div class="grid">
+            <!-- Patient Intake Form -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="icon">📋</div>
+                    <h2>Patient Registration</h2>
+                </div>
+
+                <form id="patientForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name <span class="required">*</span></label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name <span class="required">*</span></label>
+                            <input type="text" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date of Birth <span class="required">*</span></label>
+                            <input type="date" id="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender <span class="required">*</span></label>
+                            <select id="gender" required>
+                                <option value="">Select...</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not-to-say">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email <span class="required">*</span></label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" id="address">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Primary Care Physician</label>
+                        <input type="text" id="physician">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Insurance Provider</label>
+                        <input type="text" id="insurance">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Medical History / Allergies</label>
+                        <textarea id="medicalHistory"
+                            placeholder="Please list any chronic conditions, allergies, or current medications..."></textarea>
+                    </div>
+
+                    <button type="submit">Submit Registration</button>
+                    <div class="success-message" id="successMessage">
+                        ✓ Registration submitted successfully! We'll contact you shortly.
+                    </div>
+                </form>
+            </div>
+
+            <!-- AI Symptom Assessment Chatbot -->
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our healthcare services</p>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your clinic hours?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We're open Monday through Friday from 8:00 AM to 6:00 PM, and Saturdays from 9:00 AM to 2:00 PM.
+                        We're closed on Sundays and major holidays. For urgent care outside these hours, please call our
+                        24/7 emergency line.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I schedule an appointment?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can schedule an appointment by calling our office at (555) 123-4567, using our online patient
+                        portal, or by filling out the registration form on this page. We typically can accommodate
+                        appointments within 48 hours for routine visits.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What insurance plans do you accept?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We accept most major insurance plans including Blue Cross Blue Shield, Aetna, Cigna,
+                        UnitedHealthcare, and Medicare. Please contact our billing department to verify your specific
+                        plan coverage before your visit.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I need to bring anything to my first appointment?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Please bring a valid photo ID, your insurance card, a list of current medications, and any
+                        relevant medical records from previous healthcare providers. Arriving 15 minutes early helps
+                        ensure we have time to complete necessary paperwork.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What services do you provide?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We offer comprehensive primary care including annual physicals, chronic disease management,
+                        preventive care, vaccinations, minor procedures, lab services, and referrals to specialists when
+                        needed. We also provide telehealth consultations for appropriate conditions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I access my medical records?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can access your medical records through our secure online patient portal. After your first
+                        visit, we'll provide you with login credentials. You can also request paper copies by contacting
+                        our medical records department at least 48 hours in advance.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 MediCare Plus. Committed to your health and wellbeing.</p>
+        </footer>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
